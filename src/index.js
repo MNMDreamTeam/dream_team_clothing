@@ -1,8 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
+
+class App extends React.Component {
+    constructor(props){
+        super(props);
+    }
+
+    render(){
+        return (
+            <div>
+                <Home />
+                <Related />
+                <Outfit />
+                <Reviews />
+            </div>
+        )
+    }
+}
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
